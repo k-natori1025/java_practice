@@ -44,6 +44,7 @@ public class SalesEmployee {
     }
 
     /******** メソッド ********************************************/
+    /*--------------------staticメソッド--------------------*/
     /**
      * 会社名の表示 (static)
      */
@@ -51,6 +52,31 @@ public class SalesEmployee {
         System.out.println("■会社名：" + COMPANY_NAME);
     }
 
+    /*--------------------getter/setter--------------------*/
+    /**
+     * フィールド salesAmt の値をゲットする
+     * 
+     * @return salesAmt
+     */
+    public int getSalesAmt() {
+        return salesAmt;
+    }
+
+    /**
+     * フィールド salesAmt の値をセットする
+     * 
+     * @param salesAmt セットする salesAmt
+     */
+    public void setSalesAmt(int salesAmt) {
+        if (0 <= salesAmt) {
+            this.salesAmt = salesAmt;
+        } else {
+            System.out.println("\n-->マイナスは設定できません。0を設定します。");
+            this.salesAmt = 0;
+        }
+    }
+
+    /*--------------------通常メソッド--------------------*/
     /**
      * 売上げる
      * 

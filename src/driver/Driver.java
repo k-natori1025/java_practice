@@ -20,7 +20,13 @@ public class Driver {
 
         // インスタンス化・情報表示
         SalesEmployee kawai = new SalesEmployee("河合彩香");
-        System.out.println();
+
+        System.out.println("\n---インスタンス作成済み---\n");
+        // System.out.println("salesAmt参照の結果:" + kawai.salesAmt);
+        System.out.println("getSalesAmt()の結果:" + kawai.getSalesAmt());
+
+        // kawai.setSalesAmt(500000);
+        kawai.setSalesAmt(-100000);
         kawai.displayInfo();
 
         // System.out.println("name:" + kawai.name);
