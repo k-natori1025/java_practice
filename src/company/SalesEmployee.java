@@ -1,6 +1,9 @@
 package company;
 
-public class SalesEmployee {
+/**
+ * 営業部員クラス
+ */
+public class SalesEmployee extends Employee {
     /******** フィールド ******************************************/
     /**
      * 会社名 (static)
@@ -10,12 +13,7 @@ public class SalesEmployee {
     /**
      * 標準売上金額 (static)
      */
-    private static final int DEFAULT_SALES_AMT = 150000;
-
-    /**
-     * 名前
-     */
-    private String name;
+    // private static final int DEFAULT_SALES_AMT = 150000;
 
     /**
      * 売上合計金額
@@ -29,19 +27,19 @@ public class SalesEmployee {
      * @param name     名前初期値
      * @param salesAmt 売上合計金額初期値
      */
-    public SalesEmployee(String name, int salesAmt) {
-        this.name = name;
-        this.salesAmt = salesAmt;
-    }
+    // public SalesEmployee(String name, int salesAmt) {
+    // this.name = name;
+    // this.salesAmt = salesAmt;
+    // }
 
-    /**
-     * 名前・売上合計金額(0)の初期化
-     * 
-     * @param name
-     */
-    public SalesEmployee(String name) {
-        this(name, 0);
-    }
+    // /**
+    // * 名前・売上合計金額(0)の初期化
+    // *
+    // * @param name
+    // */
+    // public SalesEmployee(String name) {
+    // this(name, 0);
+    // }
 
     /******** メソッド ********************************************/
     /*--------------------staticメソッド--------------------*/
@@ -88,15 +86,6 @@ public class SalesEmployee {
     }
 
     /**
-     * 売上げる（標準売上金額）
-     * 
-     * @return 処理後の売上合計金額
-     */
-    public int sell() {
-        return this.sell(DEFAULT_SALES_AMT);
-    }
-
-    /**
      * 返品を受け付ける
      * 
      * @param amt 返品金額（売上マイナス）
@@ -107,10 +96,9 @@ public class SalesEmployee {
     }
 
     /**
-     * 情報表示
+     * 売上金額表示
      */
-    public void displayInfo() {
-        System.out.println("名前：" + name);
+    public void displaySalesAmt() {
         System.out.println("売上：" + salesAmt + "円");
     }
 }
