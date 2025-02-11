@@ -15,6 +15,18 @@ public class Employee {
      */
     private String name;
 
+    /******** コンストラクタ **************************************/
+    /**
+     * コンストラクタ（フィールド初期化）
+     * 
+     * @param id   フィールド id への設定値
+     * @param name フィールド name への設定値
+     */
+    public Employee(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     /******** メソッド ********************************************/
     /*--------------------getter/setter--------------------*/
     /**

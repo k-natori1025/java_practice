@@ -11,35 +11,32 @@ public class SalesEmployee extends Employee {
     private static final String COMPANY_NAME = "XX商事";
 
     /**
-     * 標準売上金額 (static)
-     */
-    // private static final int DEFAULT_SALES_AMT = 150000;
-
-    /**
      * 売上合計金額
      */
     private int salesAmt;
 
     /******** コンストラクタ **************************************/
     /**
-     * 名前・売上合計金額の初期化
+     * コンストラクタ（フィールド初期化）
      * 
-     * @param name     名前初期値
-     * @param salesAmt 売上合計金額初期値
+     * @param id       フィールド id への設定値
+     * @param name     フィールド name への設定値
+     * @param salesAmt フィールド salesAmt への設定値
      */
-    // public SalesEmployee(String name, int salesAmt) {
-    // this.name = name;
-    // this.salesAmt = salesAmt;
-    // }
+    public SalesEmployee(int id, String name, int salesAmt) {
+        super(id, name);
+        this.salesAmt = salesAmt;
+    }
 
-    // /**
-    // * 名前・売上合計金額(0)の初期化
-    // *
-    // * @param name
-    // */
-    // public SalesEmployee(String name) {
-    // this(name, 0);
-    // }
+    /**
+     * コンストラクタ（フィールド初期化）
+     * 
+     * @param id   フィールド id への設定値
+     * @param name フィールド name への設定値
+     */
+    public SalesEmployee(int id, String name) {
+        this(id, name, 0);
+    }
 
     /******** メソッド ********************************************/
     /*--------------------staticメソッド--------------------*/

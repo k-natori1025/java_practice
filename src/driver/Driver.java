@@ -13,35 +13,23 @@ public class Driver {
      * @param args 未使用
      */
     public static void main(String[] args) {
-        // インスタンス化・情報表示
-        // SalesEmployee hayami = new SalesEmployee("速水剛留", 1000000);
-        // System.out.println();
-        // hayami.displayInfo();
-
-        // インスタンス化・情報表示
-        // SalesEmployee kawai = new SalesEmployee("河合彩香");
-
-        // System.out.println("\n---インスタンス作成済み---\n");
-        // System.out.println("salesAmt参照の結果:" + kawai.salesAmt);
-        // System.out.println("getSalesAmt()の結果:" + kawai.getSalesAmt());
-
-        // kawai.setSalesAmt(500000);
-        // kawai.setSalesAmt(-100000);
-        // kawai.displayInfo();
-
-        // System.out.println("name:" + kawai.name);
-
-        // インスタンス化&初期化設定
-        SalesEmployee natori = new SalesEmployee();
-        natori.setId(1234);
-        natori.setName("名取");
-        natori.setSalesAmt(10000);
-
+        // インスタンス化
+        SalesEmployee natori = new SalesEmployee(1234, "名取", 100000);
         // 情報表示
         System.out.println();
-        SalesEmployee.displayCompany();
         natori.displayInfo();
         natori.displaySalesAmt();
+
+        System.out.println();
+        natori.refund(500);
+        natori.displaySalesAmt();
+
+        // インスタンス化
+        SalesEmployee aaa = new SalesEmployee(1235, "aaa");
+        // 情報表示
+        System.out.println();
+        aaa.displayInfo();
+        aaa.displaySalesAmt();
 
     }
 }
