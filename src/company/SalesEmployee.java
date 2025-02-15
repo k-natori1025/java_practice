@@ -98,4 +98,13 @@ public class SalesEmployee extends Employee {
     public void displaySalesAmt() {
         System.out.println("売上：" + salesAmt + "円");
     }
+
+    /**
+     * 情報表示（オーバーライド）
+     */
+    @Override
+    public void displayInfo() {
+        super.displayInfo();
+        displaySalesAmt();
+    }
 }
