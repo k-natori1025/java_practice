@@ -1,6 +1,6 @@
-package driver;
+package object.driver;
 
-import company.SalesEmployee;
+import object.company.SalesEmployee;
 
 /**
  * 実行用クラス

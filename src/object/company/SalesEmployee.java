@@ -1,4 +1,4 @@
-package company;
+package object.company;
 
 /**
  * 営業部員クラス

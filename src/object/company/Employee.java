@@ -1,4 +1,4 @@
-package company;
+package object.company;
 
 /**
  * 社員クラス
