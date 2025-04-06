@@ -1,0 +1,11 @@
+# Java class files
+*.class
+
+# Eclipse, IntelliJ, VSCode etc.
+*.log
+
+# Build folders
+/bin/
+/out/
+/target/
+
